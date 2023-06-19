@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
 import 'package:flutter/material.dart';
+import 'cartscreen.dart';
 
 void main() {
   runApp(MyApp(
@@ -349,6 +350,17 @@ class _CounterScreenState extends State<CounterScreen> {
             },
             child: const Icon(Icons.clear),
           ),
+      const SizedBox(
+        width: 8,),
+
+          FloatingActionButton(
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(
+                  builder:(context) => ProductDetails(counter.toString())),);
+            },
+            child: const Icon(Icons.shopping_cart),
+          ),
+
         ],
       ),
     );
