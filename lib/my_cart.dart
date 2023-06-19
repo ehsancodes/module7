@@ -322,13 +322,13 @@ class _CounterScreenState extends State<CounterScreen> {
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          ElevatedButton(
-            onPressed: () {
-              counter = counter + 1;
-              setState(() {});
-            },
-            child: const Text("Buy now"),
-          ),
+          // ElevatedButton(
+          //   onPressed: () {
+          //     counter = counter + 1;
+          //     setState(() {});
+          //   },
+          //   child: const Text("Buy now"),
+          // ),
           const SizedBox(
             width: 50,
           ),
